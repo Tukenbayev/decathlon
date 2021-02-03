@@ -4,6 +4,7 @@ import enums.DecathlonEvent;
 import pojo.DecathlonResult;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class PrizePlaceService {
 
@@ -27,16 +28,29 @@ public class PrizePlaceService {
      */
     public void determinePrizePlaces(List<DecathlonResult> results) {
         SortedMap<Integer, List<DecathlonResult>> places = new TreeMap<>(Collections.reverseOrder());
+
         results.forEach(result -> {
-            if (places.containsKey(result.totalScore)) {
-                places.get(result.totalScore).add(result);
-            } else {
+            if (!places.containsKey(result.totalScore)) {
                 places.put(result.totalScore, new ArrayList<>(results.size()));
             }
+            places.get(result.totalScore).add(result);
         });
 
+        AtomicInteger placeCounter = new AtomicInteger(1);
+        places.forEach((score, athletes) -> {
+            String place = String.valueOf(placeCounter.get());
+            athletes.forEach(athlete -> {
+                if (athletes.size() > 1) {
+                    athlete.place = place + "-" + (placeCounter.get() + athletes.size() - 1);
+                } else {
+                    athlete.place = place;
+                }
+            });
 
+            placeCounter.addAndGet(athletes.size());
+        });
 
+        Collections.sort(results);
     }
 
 
