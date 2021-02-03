@@ -5,7 +5,7 @@ public class DecathlonResult {
     public String athleteName;
 
     /**
-     *  results input file
+     *  results from input file
      */
     public Double _100m;
     public Double longJump;

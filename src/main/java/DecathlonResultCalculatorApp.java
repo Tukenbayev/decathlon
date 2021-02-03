@@ -1,3 +1,4 @@
+import enums.OutputFileExtension;
 import exception.FileExtensionNotSupportedException;
 import parser.FileParser;
 import pojo.DecathlonResult;
@@ -10,12 +11,15 @@ import java.util.List;
 
 public class DecathlonResultCalculatorApp {
 
+    private static final String RESOURCE_PATH = "src/main/resources/";
+
     public static void main(String[] args) {
         System.out.println("DECATHLON RESULT CALCULATOR APP STARTED");
-        String fileName = "src/main/resources/results.csv";
+        String fileName = RESOURCE_PATH + "results.csv";
+        OutputFileExtension outputExtension = OutputFileExtension.XML;
 
         try {
-            FileParser parser = FileParser.getParserByExtension(ExtensionUtil.getInputExtension(fileName));
+            FileParser parser = FileParser.buildParser(ExtensionUtil.getInputExtension(fileName));
             List<DecathlonResult> results = parser.parse(new FileReader(fileName));
 
             PrizePlaceService prizePlaceService = new PrizePlaceService();

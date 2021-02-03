@@ -12,7 +12,7 @@ public abstract class FileParser {
 
     public abstract List<DecathlonResult> parse(FileReader fileReader) throws IOException, IllegalAccessException;
 
-    public static FileParser getParserByExtension(InputFileExtension extension) throws FileExtensionNotSupportedException {
+    public static FileParser buildParser(InputFileExtension extension) throws FileExtensionNotSupportedException {
         switch (extension) {
             case CSV:
                 return new CsvParser();

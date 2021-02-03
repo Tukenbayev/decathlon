@@ -1,6 +1,5 @@
 package converter;
 
-import enums.OutputFileExtension;
 import pojo.DecathlonResult;
 
 import java.util.List;

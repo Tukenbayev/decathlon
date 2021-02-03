@@ -3,7 +3,7 @@ package service;
 import enums.DecathlonEvent;
 import pojo.DecathlonResult;
 
-import java.util.List;
+import java.util.*;
 
 public class PrizePlaceService {
 
@@ -26,6 +26,16 @@ public class PrizePlaceService {
      * Determines places and sorts "results"
      */
     public void determinePrizePlaces(List<DecathlonResult> results) {
+        SortedMap<Integer, List<DecathlonResult>> places = new TreeMap<>(Collections.reverseOrder());
+        results.forEach(result -> {
+            if (places.containsKey(result.totalScore)) {
+                places.get(result.totalScore).add(result);
+            } else {
+                places.put(result.totalScore, new ArrayList<>(results.size()));
+            }
+        });
+
+
 
     }
 
