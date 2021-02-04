@@ -1,4 +1,4 @@
-package enums;
+package io.farel.resultcalculator.enums;
 
 public enum DecathlonEvent {
 
@@ -26,10 +26,14 @@ public enum DecathlonEvent {
     }
 
     public Integer calculateScore(Double performance) {
-        if (this.eventType.equals(EventType.TRACK)) {
-            return ((Double)(A * Math.pow(B - performance, C))).intValue();
+        if (performance != null) {
+            if (this.eventType.equals(EventType.TRACK)) {
+                return ((Double)(A * Math.pow(B - performance, C))).intValue();
+            } else {
+                return ((Double)(A * Math.pow(performance - B, C))).intValue();
+            }
         } else {
-            return ((Double)(A * Math.pow(performance - B, C))).intValue();
+            return 0;
         }
     }
 

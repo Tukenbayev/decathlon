@@ -1,8 +1,8 @@
-package parser;
+package io.farel.resultcalculator.parser;
 
-import enums.InputFileExtension;
-import exception.FileExtensionNotSupportedException;
-import pojo.DecathlonResult;
+import io.farel.resultcalculator.enums.InputFileExtension;
+import io.farel.resultcalculator.exception.FileExtensionNotSupportedException;
+import io.farel.resultcalculator.pojo.DecathlonResult;
 
 import java.io.FileReader;
 import java.io.IOException;

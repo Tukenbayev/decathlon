@@ -1,4 +1,4 @@
-package enums;
+package io.farel.resultcalculator.enums;
 
 public enum InputFileExtension {
     CSV, XLS, XLSX;

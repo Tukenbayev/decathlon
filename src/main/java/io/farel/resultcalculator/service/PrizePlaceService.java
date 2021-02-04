@@ -1,7 +1,7 @@
-package service;
+package io.farel.resultcalculator.service;
 
-import enums.DecathlonEvent;
-import pojo.DecathlonResult;
+import io.farel.resultcalculator.enums.DecathlonEvent;
+import io.farel.resultcalculator.pojo.DecathlonResult;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;

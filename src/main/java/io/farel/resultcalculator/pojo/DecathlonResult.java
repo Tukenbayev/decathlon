@@ -1,4 +1,4 @@
-package pojo;
+package io.farel.resultcalculator.pojo;
 
 public class DecathlonResult implements Comparable<DecathlonResult>{
 

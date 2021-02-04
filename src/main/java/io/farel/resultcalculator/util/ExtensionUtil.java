@@ -1,6 +1,6 @@
-package util;
+package io.farel.resultcalculator.util;
 
-import enums.InputFileExtension;
+import io.farel.resultcalculator.enums.InputFileExtension;
 
 public class ExtensionUtil {
 

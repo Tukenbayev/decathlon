@@ -1,6 +1,6 @@
-package parser;
+package io.farel.resultcalculator.parser;
 
-import pojo.DecathlonResult;
+import io.farel.resultcalculator.pojo.DecathlonResult;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

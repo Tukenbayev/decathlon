@@ -1,0 +1,62 @@
+<DecathlonResults>
+	<DecathlonResult>
+		<athleteName>John Smith</athleteName>
+		<_100m>12.61</_100m>
+		<longJump>5.0</longJump>
+		<shotPut>9.22</shotPut>
+		<highJump>1.5</highJump>
+		<_400m>60.39</_400m>
+		<hurdles110m>16.43</hurdles110m>
+		<discusThrow>21.6</discusThrow>
+		<poleVault>2.6</poleVault>
+		<javelinThrow>35.81</javelinThrow>
+		<_1500m>325.72</_1500m>
+		<totalScore>3165</totalScore>
+		<place>1</place>
+	</DecathlonResult>
+	<DecathlonResult>
+		<athleteName>Jaan Lepp</athleteName>
+		<_100m>13.75</_100m>
+		<longJump>4.84</longJump>
+		<shotPut>10.12</shotPut>
+		<highJump>1.5</highJump>
+		<_400m>68.44</_400m>
+		<hurdles110m>19.18</hurdles110m>
+		<discusThrow>30.85</discusThrow>
+		<poleVault>2.8</poleVault>
+		<javelinThrow>33.88</javelinThrow>
+		<_1500m>382.75</_1500m>
+		<totalScore>2444</totalScore>
+		<place>2</place>
+	</DecathlonResult>
+	<DecathlonResult>
+		<athleteName>Foo Bar</athleteName>
+		<_100m>13.43</_100m>
+		<longJump>4.35</longJump>
+		<shotPut>8.64</shotPut>
+		<highJump>1.5</highJump>
+		<_400m>66.06</_400m>
+		<hurdles110m>19.05</hurdles110m>
+		<discusThrow>24.89</discusThrow>
+		<poleVault>2.2</poleVault>
+		<javelinThrow>33.48</javelinThrow>
+		<_1500m>411.01</_1500m>
+		<totalScore>2267</totalScore>
+		<place>3</place>
+	</DecathlonResult>
+	<DecathlonResult>
+		<athleteName>Jane Doe</athleteName>
+		<_100m>13.04</_100m>
+		<longJump>4.53</longJump>
+		<shotPut>7.79</shotPut>
+		<highJump>1.55</highJump>
+		<_400m>64.72</_400m>
+		<hurdles110m>18.74</hurdles110m>
+		<discusThrow>24.2</discusThrow>
+		<poleVault>2.4</poleVault>
+		<javelinThrow>28.2</javelinThrow>
+		<_1500m>410.76</_1500m>
+		<totalScore>2258</totalScore>
+		<place>4</place>
+	</DecathlonResult>
+</DecathlonResults>
